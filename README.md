@@ -1,7 +1,7 @@
 # scut-thesis
 华南理工大学学位论文 Latex/Lyx 模板----latex for SCUT thesis
 
-本文档基于《华南理工大学学位论文Latex/Lyx模板》（来自https://github.com/alwintsui/scutthesis，详情请看其相关介绍说明），增删内容如下：
+本文档基于《华南理工大学学位论文Latex/Lyx模板》（来自 https://github.com/alwintsui/scutthesis ，详情请看其相关介绍说明），增删内容如下：
 
 1.	补充了部分图、表和公式的演示例子。
 2.	修改了scutthesis.bst，使得即便reference.bib里面有多余未引用条目，在Windows 的Texlive（2018）下依然能够顺利编译通过。
