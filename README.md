@@ -1,5 +1,5 @@
 # scut-thesis
-华南理工大学学位论文 Latex/Lyx 模板----latex for SCUT thesis
+华南理工大学学位论文 Latex/Lyx 模板----latex template for SCUT thesis
 
 本文档基于《华南理工大学学位论文Latex/Lyx模板》（来自 https://github.com/alwintsui/scutthesis ，详情请看其相关介绍说明），增删内容如下：
 
