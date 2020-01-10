@@ -6,6 +6,5 @@
 4.	修改了附录中图、表和公式接着正文章节序号编号的错误。
 5.	修改了在Windows下致谢最后名称和日期没有右对齐的格式。
 
-
-华南理工大学学位论文 Latex/Lyx 模板----latex for SCUT thesis
-https://github.com/yecfly/scut-thesis
+使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
+编译时如果提示缺乏字体，请按照attachment里面的字体（右键安装即可）。
