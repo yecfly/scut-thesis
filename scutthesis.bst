@@ -100,8 +100,8 @@ FUNCTION {format.url}
 FUNCTION {print.doi}
  {doi duplicate$ empty$
    { pop$ "" }
-   { new.sentence
-     doiprefix "\doi{" * swap$  * "}" *
+   { newline$
+     write$ "\doi{" * swap$  * "}" *
    }
    if$
  }
@@ -822,7 +822,7 @@ FUNCTION {format.misc.title}                %wk                 %  Nothing needs
 	{ "" }                                                  %  authordate1.bst
 	{
 	  typeoflit empty$
-	    {format.title "[缺文献类型标志代码]." * title output.check}
+	    {format.title "[Z]." * title output.check}
 	    {format.title "[" * TypeofLit * "]" * title output.check}
 	  if$
 	}
@@ -836,7 +836,7 @@ FUNCTION {format.misc.title}                %wk                 %  Nothing needs
 	    { "" }                                                  %  authordate1.bst
 	    {
 	      typeoflit empty$
-		{format.title "[缺文献类型标志代码]." * title output.check}
+		{format.title "[Z]." * title output.check}
 		{format.title title output.check}
 	      if$
 	    }
@@ -852,7 +852,7 @@ FUNCTION {format.misc.title}                %wk                 %  Nothing needs
 	    { "" }                                                  %  authordate1.bst
 	    {
 	      typeoflit empty$
-		{format.title "[缺文献类型标志代码]." * title output.check}
+		{format.title "[Z]." * title output.check}
 		{format.title title output.check}
 	      if$
 	    }
@@ -878,7 +878,7 @@ FUNCTION {format.cmisc.title}
    { "No Title" }
    {
      typeoflit empty$
-       {format.title "[缺文献类型标志代码]" * title output.check}
+       {format.title "[Z]" * title output.check}
        {format.title "[" * TypeofLit * "]" * title output.check}
      if$
    }
@@ -894,7 +894,7 @@ FUNCTION {format.cmisc.title.xx}
 	{ "" }
 	{
 	  typeoflit empty$
-	    {format.title "[缺文献类型标志代码]." * title output.check}
+	    {format.title "[Z]." * title output.check}
 	    {format.title title output.check}
 	  if$
 	}
@@ -907,7 +907,7 @@ FUNCTION {format.cmisc.title.xx}
 	    { "" }
 	    {
 	      typeoflit empty$
-		{format.title "[缺文献类型标志代码]." * title output.check}
+		{format.title "[Z]." * title output.check}
 		{format.title title output.check}
 	      if$
 	    }
@@ -919,7 +919,7 @@ FUNCTION {format.cmisc.title.xx}
 	    { "" }
 	    {
 	      typeoflit empty$
-		{format.title "[缺文献类型标志代码]." * title output.check}
+		{format.title "[Z]." * title output.check}
 		{format.title title output.check}
 	      if$
 	    }
@@ -1017,7 +1017,7 @@ FUNCTION {format.inproceedings.title}
    { "No Title" }
    {
      typeoflit empty$
-       {format.title "[A]" * title output.check}
+       {format.title "[C]" * title output.check}
        {format.title "[" * TypeofLit * "]" * title output.check}
      if$
    }
@@ -1030,7 +1030,7 @@ FUNCTION {format.cinproceedings.title}                                     %  No
    { "" }                                                  %  authordate1.bst
    {
      typeoflit empty$
-       {format.title "[A]" * title output.check}
+       {format.title "[C]" * title output.check}
        {format.title "" * title output.check}
      if$
    }
@@ -1654,8 +1654,8 @@ FUNCTION {format.in.ed.booktitle}
     { "[No booktitle]" }
     { editor empty$
       new.block
-        { "In: " format.editors * booktitle "[C]" * * }
-	{ "In: " format.editors * ", eds. " * booktitle "[C]" * * }
+        { "In: " format.editors * booktitle * }
+	{ "In: " format.editors * ", eds. " * booktitle * }
       if$
     }
   if$
@@ -1666,8 +1666,8 @@ FUNCTION {format.in.ced.booktitle}
     { "" }
     { editor empty$
       new.block
-        { "见： " format.ceditors * booktitle "[C]" * * }
-	{ "见： " format.ceditors * "， 主编. " * booktitle "[C]" * * }
+        { "见： " format.ceditors * booktitle * }
+	{ "见： " format.ceditors * "， 主编. " * booktitle * }
       if$
     }
   if$
@@ -2355,8 +2355,6 @@ FUNCTION {inproceedings}                                    %wk 改自incollecti
        {
 	 format.in.ed.booktitle output
 	 format.edition output
-	 new.block
-	 %seu.publisher
 	 format.inproceedings.addr output % added by Quansheng Guan
 	 output.year.check
 	 incollectionlike.series.volume.number.pages output
@@ -2387,7 +2385,6 @@ FUNCTION {inproceedings}                                    %wk 改自incollecti
      crossref missing$                                         %  Chapter and/or
        { format.in.ced.booktitle output                         %  page numbers can
 	 format.cedition output                                 %  come out via this         %wk  edition->cedition
-	 new.block
 	 format.cinproceedings.addr.pub "publisher" output.check
 	 output.cyear.check
 	 cincollectionlike.series.volume.number.pages output          %  route, too.
