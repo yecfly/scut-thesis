@@ -96,16 +96,13 @@ FUNCTION {format.url}
       "\url{" url * "}" * }
   if$
 }
-
 FUNCTION {print.doi}
- {doi duplicate$ empty$
-   { pop$ "" }
-   { newline$
-     write$ "\doi{" * swap$  * "}" *
-   }
-   if$
- }
-
+{ doi empty$
+    { "" }
+    { new.block
+      "\doi{" doi * "}" * }
+  if$
+}
 
 FUNCTION {init.state.consts}
 { #0 'before.all :=
