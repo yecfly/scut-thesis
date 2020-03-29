@@ -1,3 +1,4 @@
+
 注意事项：
 使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
 编译时如果提示缺乏字体，请按照attachment里面的字体（右键安装即可）。
