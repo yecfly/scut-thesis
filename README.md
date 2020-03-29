@@ -3,7 +3,12 @@
 使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
 编译时如果提示缺乏字体，请按照attachment里面的字体（右键安装即可）。
 
-建议使用texlive2018。如果是用texlive2019（windows）编译，会出现brokenpipe提示出错。按袁同学提供的信息，这时可以更改scutthesis.cls第445行中的内容，将\includepdf改成\includegraphics（但是pdf模板超过5页时，据说首页PDF模板的左右对齐格式会有些不合规范）。
+建议使用texlive2018。如果是用texlive2019（windows）编译，会出现brokenpipe提示出错。这时可以按容同学找的方法更改scutthesis.cls第445行中的内容，将
+\includepdf[pages=-]{thesis_cover.pdf}
+换成
+\includepdf[pages={1-5,{},7-8}]{thesis_cover.pdf}
+详情请看：https://wenda.latexstudio.net/q-1962.html。
+或按袁同学提供的信息，这时可以更改scutthesis.cls第445行中的内容，将\includepdf改成\includegraphics（但是pdf模板超过5页时，据说首页PDF模板的左右对齐格式会有些不合规范）。
 -------------------------------------------------------
 -------------------------------------------------------
 本文档基于《华南理工大学学位论文Latex/Lyx模板》（来自https://github.com/alwintsui/scutthesis，详情请看其相关介绍说明），增删内容如下：
