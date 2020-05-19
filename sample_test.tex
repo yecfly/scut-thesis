@@ -26,7 +26,7 @@
 \frontmatter
 
 \begin{abstractCN}
-本文用于测试scutthese.cls的使用，主要包括xelatex是否正常可调用，中文字体是否显示之前，pdf标签是否正确显示。大部分Windows系统缺乏“楷体\_GB2312.ttf”字体注册，请先安装该字体。封面请按要求修改Word文档 thesis\_cover.doc 中相应内容，并另存为pdf格式。
+本文用于测试scutthese.cls的使用，主要包括xelatex是否正常可调用，以及增加部分图表的使用案例。GitHub项目请看\cite{2020Scutthesis}。大部分Windows系统缺乏“楷体\_GB2312.ttf”字体注册，请先安装该字体。封面请按要求修改Word文档 thesis\_cover.doc 中相应内容，并另存为pdf格式。\textbf{使用前请仔细阅读README.md和本文档后续中的使用案例，以及sample$\_$test.tex中的注释文字（包括包、模板、显示等的使用说明）。}
 
 本文档基于《华南理工大学学位论文Latex/Lyx模板》\cite{2016Scutthesis}（来自https://github.com/alwintsui/scutthesis），增删内容如下：
 \begin{itemize}
@@ -35,6 +35,9 @@
   \item 修改了结论在chapterx命令下，偶数页显示上一章标题的错误。
   \item 修改了附录中图、表和公式接着正文章节序号编号的错误。
   \item 修改了在Windows下致谢最后名称和日期没有右对齐的格式。
+  \item 修改了参考文献中会议类型文献出现两个文献标记的错误。
+  \item 修改了当参考文献包含doi字段时正文无法生成参考文献列表的错误。
+  \item 增加了在MIKTex下由于引用PDF封面导致编译错误的解决说明。
 \end{itemize}
 
 
