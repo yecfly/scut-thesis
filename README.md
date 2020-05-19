@@ -1,13 +1,13 @@
+
 注意事项：
-￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥（重要事情说三遍）
-使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
-￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
-使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
-￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
-使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
+（重要事情说三遍）
+￥￥￥使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
+
+￥￥￥使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
+
+￥￥￥使用前请仔细阅读“scutthesis说明.pdf”、“sample_test.pdf”和attachment里面的撰写规范文档。
 
 编译时如果提示缺乏字体，请按照attachment里面的字体（右键安装即可）。
--------------------------------------------------------
 -------------------------------------------------------
 本文档基于《华南理工大学学位论文Latex/Lyx模板》（来自https://github.com/alwintsui/scutthesis，详情请看其相关介绍说明），增删内容如下：
 -------2019.11.08
