@@ -1995,8 +1995,8 @@ FUNCTION {article}
 	 format.pages output
        }
      if$
-     %new.block
-     %format.url output
+     new.block
+     format.url output
      %print.doi
      new.block
      note output
@@ -2531,7 +2531,8 @@ FUNCTION {mastersthesis}                                %wk   改自book类型
        }
      if$
      new.block
-     format.ctitle  "[D]:[硕士学位论文]" * "title" output.check                      %wk
+     %format.ctitle  "[D]:[硕士学位论文]" * "title" output.check                      %wk
+     format.ctitle  "[D]" * "title" output.check                      %wk
      new.block
      crossref missing$
        {
@@ -2606,7 +2607,8 @@ FUNCTION {phdthesis}                        %wk  改自book类型
        }
      if$
      new.block
-     format.ctitle  "[D]：［博士学位论文］" * "title" output.check                        %wk
+     %format.ctitle  "[D]：［博士学位论文］" * "title" output.check                        %wk
+     format.ctitle  "[D]" * "title" output.check                        %wk
      new.block
      crossref missing$
        {
